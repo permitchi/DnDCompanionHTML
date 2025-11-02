@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+    <!-- <script src="scripts/characterSheet.js" defer></script>
+     <script>
+            let attributeName = ["Str", "Dex", "Con", "Int", "Wis", "Cha"];
+            const container = document.getElementById('attributes-container');
+            for (let i = 0; i < 6; i++) {                
+                const attributeBox = `
+            <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">${attributeName[i]}</p>
+                    <p id="modifier-value">{modifier value}</p>
+                    <p id="attribute-value">{attribute value}</p>
+                </div>
+            </div>         
+            `;
+                container.insertAdjacentHTML('beforeend', attributeBox);
+            }
+        </script> -->
+</head>
+<body>
+    <div class="header">
+        <h1>Character Sheet</h1>
+    </div>
+
+    <div class="character-container">
+        <div class="character-info">
+            <p>Ran Kanzaki</p>
+            <p>Ranger</p>
+        </div>
+        <div class="character-level">
+            <p>Level</p>
+            <p>1</p>
+        </div>
+        <div class="character-level">
+            <p>Initiative</p>
+            <p>10</p> <!-- 10 + dex modifier -->
+        </div>
+        <div class="character-info">
+            <p>HP - 100</p>
+            <p>MANA - 50</p>
+        </div>
+    </div>
+
+    <div class="attributes-container">
+        <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">Strength</p>
+                    <p id="modifier-value">{value}</p>
+                    <div class="modifier-detail">
+                        <input type="number" id="attribute-value" placeholder="0">
+                        <button id="plus-mod">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">Dexterity</p>
+                    <p id="modifier-value">{value}</p>
+                    <div class="modifier-detail">
+                        <input type="number" id="attribute-value" placeholder="0">
+                        <button id="plus-mod">+</button>
+                    </div>
+                </div>
+            </div>  
+            <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">Constitution</p>
+                    <p id="modifier-value">{value}</p>
+                    <div class="modifier-detail">
+                        <input type="number" id="attribute-value" placeholder="0">
+                        <button id="plus-mod">+</button>
+                    </div>
+                </div>
+            </div>   
+            <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">Intelligence</p>
+                    <p id="modifier-value">{value}</p>
+                    <div class="modifier-detail">
+                        <input type="number" id="attribute-value" placeholder="0">
+                        <button id="plus-mod">+</button>
+                    </div>
+                </div>
+            </div>   
+            <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">Wisdom</p>
+                    <p id="modifier-value">{value}</p>
+                    <div class="modifier-detail">
+                        <input type="number" id="attribute-value" placeholder="0">
+                        <button id="plus-mod">+</button>
+                    </div>
+                </div>
+            </div>   
+            <div class="attribute-box">
+                <div class="attribute-text">
+                    <p id="attribute-name">Charisma</p>
+                    <p id="modifier-value">{value}</p>
+                    <div class="modifier-detail">
+                        <input type="number" id="attribute-value" placeholder="0">
+                        <button id="plus-mod">+</button>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <div class="action-buttons">
+            <button id="damage">Take Damage</button>
+            <button id="use-mana">Use Skill</button>
+            <button id="roll-dice">Roll!</button>
+        </div>
+
+        <!-- <div class="hidden">
+            <div class="number-input">
+                <input type="number" id="damage-input" placeholder="Enter damage amount">
+            </div>
+
+            <div class="number-input">
+                <input type="number" id="mana-input" placeholder="Enter mana amount">
+            </div>
+
+            <div class="dice-result">
+                <p id="dice-output">{Dice Output}</p>
+            </div>
+        </div> -->
+        
+</body>
+</html>
